@@ -18,6 +18,8 @@ function App() {
   });
 
   // Pricing State
+  // BUG: `loading` is never set back to `false` if the API request fails.
+  // REQUEST: add a way for me to access API errors. For example, make an `error` object available here.
   const [{ price, loading }, setCheckoutPricing] = useCheckoutPricing({
     subscriptions: [{ plan: values.plan }],
   });
