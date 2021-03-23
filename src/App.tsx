@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState } from "react";
-import { useRecurly, useCheckoutPricing } from "@recurly/react-recurly";
+import React, { useEffect, useState } from "react";
+import { useCheckoutPricing } from "@recurly/react-recurly";
 
 import "./App.css";
 
